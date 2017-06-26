@@ -1,0 +1,23 @@
+/** COLORS **/
+
+$yellow: #ffcc00;  //#fbb900
+$Bgrey:#2f2f39;
+
+/** SIZE **/
+$full : 100%;
+$mid : 50%;
+$quart : 25%;
+
+
+
+/** FONTS **/
+
+@include font-face("OpenBold", font-files("../fonts/OpenSans-Bold.ttf"), "../fonts/OpenSans-Bold.eot",bold,normal);
+@include font-face("Open-Regular", font-files("../fonts/OpenSans-Regular.ttf"), "../fonts/OpenSans-Regular.eot",bold,normal);
+@include font-face("Open-Semibold", font-files("../fonts/OpenSans-Semibold.ttf"), "../fonts/OpenSans-Semibold.eot",bold,normal);
+@include font-face("Open-light", font-files("../fonts/OpenSans-Light.ttf"), "../fonts/OpenSans-Light.eot",bold,normal); 
+
+$basic-font-size : 13px;
+
+
+

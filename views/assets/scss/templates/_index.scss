@@ -1,0 +1,33 @@
+@import 'components/header_home';
+@import 'components/nav';
+@import 'components/footer';
+
+body {
+    
+    #concept{
+        height:800px;
+        background-color:dodgerblue;
+    }
+    #app{
+        height:800px;
+        background-color:orange;
+    }
+}
+
+* {
+    @include _transition();
+}
+
+@media screen and (max-width: 1023px) {
+    body {}
+    * {
+        @include _transition();
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {}
+    * {
+        @include _transition();
+    }
+}

@@ -1,0 +1,92 @@
+nav:first-child {
+    position: relative;
+    z-index: 300;
+    top: 0;
+    width: 90%;
+    height: 90px;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255, 255, 255, 1);
+    background-color: $Bgrey;
+    transition: all ease 1s;
+    &>a:first-child {
+        display: block;
+        float: left;
+        height: 100%;
+        img {
+            height: 70px;
+            margin-top: 10px;
+        }
+    }
+    ul {
+        float: right;
+        width: 50%;
+        display: flex;
+        height: 100%;
+        line-height: 120px;
+        li {
+            width: 25%;
+            text-align: center;
+            a {
+                text-decoration: none;
+                position: relative;
+                color: white;
+                display: block;
+                height: 100%;
+                line-height: 90px;
+                transition: all ease 1s;
+                &:hover {
+                    color: $yellow;
+                    transition: all ease 1s;
+                    &:after {
+                        background: rgba(255, 204, 0, 1);
+                        transition: all ease 1s;
+                    }
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    background: rgba(255, 204, 0, 0);
+                    height: 1px;
+                    width: 80%;
+                    top: 70%;
+                    left: 50%;
+                    margin-left: -40%;
+                    transition: all ease 1s;
+                }
+            }
+        }
+    }
+}
+
+//@keyframes peekaboo {
+//    from {
+//        top: -90px;
+//    }
+//    to {
+//        top: 0;
+//    }
+//}
+//
+//@keyframes peekabooRev {
+//    from {
+//        top: 0px;
+//    }
+//    to {
+//        top: -90px;
+//    }
+//}
+//
+//
+//.peekaboo {
+//    animation-name: peekaboo;
+//    animation-duration: 2s;
+//    animation-iteration-count: 1;
+//}
+//.peekabooRev {
+//    animation-name: peekabooRev;
+//    animation-duration: 2s;
+//    animation-iteration-count: 1;
+//}

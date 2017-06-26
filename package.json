@@ -1,0 +1,27 @@
+{
+  "name": "testdress",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Test Dress First Iteration",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "~4.13.4",
+    "express-session": "^1.15.2",
+    "multer": "^1.3.0",
+    "mustache": "^2.3.0",
+    "mysql": "~2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://bitbucket.org/example/example.git"
+  },
+  "author": "Aïcha Essalehi <yomikoda@gmail.com>",
+  "license": ""
+}

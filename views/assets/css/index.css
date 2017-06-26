@@ -1,0 +1,233 @@
+/* line 5, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/** COLORS **/
+/** SIZE **/
+/** FONTS **/
+@font-face {
+  font-family: "OpenBold";
+  src: url('/fonts/../fonts/OpenSans-Bold.eot');
+  src: url('/fonts/../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open-Regular";
+  src: url('/fonts/../fonts/OpenSans-Regular.eot');
+  src: url('/fonts/../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open-Semibold";
+  src: url('/fonts/../fonts/OpenSans-Semibold.eot');
+  src: url('/fonts/../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open-light";
+  src: url('/fonts/../fonts/OpenSans-Light.eot');
+  src: url('/fonts/../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 1, ../scss/components/_header_home.scss */
+header {
+  height: 800px;
+  width: 100%;
+  background: url(../imgs/header_background.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 6, ../scss/components/_header_home.scss */
+header .swiper-container {
+  width: 100%;
+  height: 650px;
+}
+/* line 9, ../scss/components/_header_home.scss */
+header .swiper-container .swiper-pagination-bullet-active {
+  background-color: orange;
+}
+
+/* line 1, ../scss/components/_nav.scss */
+nav:first-child {
+  position: relative;
+  z-index: 300;
+  top: 0;
+  width: 90%;
+  height: 90px;
+  float: right;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  background-color: #2f2f39;
+  transition: all ease 1s;
+}
+/* line 13, ../scss/components/_nav.scss */
+nav:first-child > a:first-child {
+  display: block;
+  float: left;
+  height: 100%;
+}
+/* line 17, ../scss/components/_nav.scss */
+nav:first-child > a:first-child img {
+  height: 70px;
+  margin-top: 10px;
+}
+/* line 22, ../scss/components/_nav.scss */
+nav:first-child ul {
+  float: right;
+  width: 50%;
+  display: flex;
+  height: 100%;
+  line-height: 120px;
+}
+/* line 28, ../scss/components/_nav.scss */
+nav:first-child ul li {
+  width: 25%;
+  text-align: center;
+}
+/* line 31, ../scss/components/_nav.scss */
+nav:first-child ul li a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  display: block;
+  height: 100%;
+  line-height: 90px;
+  transition: all ease 1s;
+}
+/* line 39, ../scss/components/_nav.scss */
+nav:first-child ul li a:hover {
+  color: #ffcc00;
+  transition: all ease 1s;
+}
+/* line 42, ../scss/components/_nav.scss */
+nav:first-child ul li a:hover:after {
+  background: #ffcc00;
+  transition: all ease 1s;
+}
+/* line 47, ../scss/components/_nav.scss */
+nav:first-child ul li a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: rgba(255, 204, 0, 0);
+  height: 1px;
+  width: 80%;
+  top: 70%;
+  left: 50%;
+  margin-left: -40%;
+  transition: all ease 1s;
+}
+
+/* line 1, ../scss/components/_footer.scss */
+footer {
+  width: 94%;
+  height: calc(325px-6%);
+  padding: 3%;
+  background-color: #003399;
+}
+/* line 6, ../scss/components/_footer.scss */
+footer #logo_footer {
+  height: 200px;
+  width: 300px;
+  background-color: red;
+}
+/* line 11, ../scss/components/_footer.scss */
+footer nav {
+  width: 75%;
+  height: 30px;
+  background-color: white;
+}
+
+/* line 7, ../scss/templates/_index.scss */
+body #concept {
+  height: 800px;
+  background-color: dodgerblue;
+}
+/* line 11, ../scss/templates/_index.scss */
+body #app {
+  height: 800px;
+  background-color: orange;
+}
+
+/* line 17, ../scss/templates/_index.scss */
+* {
+  transition: all ease 1s;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 23, ../scss/templates/_index.scss */
+  * {
+    transition: all ease 1s;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 30, ../scss/templates/_index.scss */
+  * {
+    transition: all ease 1s;
+  }
+}
