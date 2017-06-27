@@ -46,7 +46,7 @@ body {
                 position: absolute;
                 height: 650px;
                 width: 300px;
-                background-image: url(../../assets/imgs/Concept-Phone.png);
+                background-image: url(../imgs/Concept-Phone.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: fixed;
@@ -65,7 +65,7 @@ body {
                     width: 850px;
                     height: 460px;
                     position: absolute;
-                    background-image: url(../../assets/imgs/phone-slide-01.jpg);
+                    background-image: url(../imgs/phone-slide-01.jpg);
                     animation-name: roundandround;
                     animation-duration: 15s;
                     animation-iteration-count: infinite;
@@ -105,7 +105,7 @@ body {
             color: white;
         }
         #appimg {
-            background-image: url(../../assets/imgs/app-dl.jpg);
+            background-image: url(../imgs/app-dl.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: right;
@@ -127,7 +127,7 @@ body {
                 justify-content: space-around;
                 align-content: space-around;
                 #appstore {
-                    background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+                    background-image: url(../imgs/Home_Slider/mfr-apple.png);
                     background-repeat: no-repeat;
                     background-position: center;
                     height: 80px;
@@ -149,7 +149,7 @@ body {
     }
     #pro {
         height: 700px;
-        background-image: url(../../assets/imgs/probg.jpg);
+        background-image: url(../imgs/probg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         h2 {
@@ -177,7 +177,7 @@ body {
             }
             #prolink {
                 #mfrpro {
-                    background-image: url(../../assets/imgs/logo_pro.svg);
+                    background-image: url(../imgs/logo_pro.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     height: 120px;
@@ -261,7 +261,7 @@ body {
                     background-position: center;
                 }
                 #phoneconcept {
-                    background-image: url(../../assets/imgs/Concept-Phone-filled.png);
+                    background-image: url(../imgs/Concept-Phone-filled.png);
                 }
                 #phoneslide {
                     display: none;

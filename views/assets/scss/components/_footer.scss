@@ -26,7 +26,7 @@ footer {
         width: 30%;
         height: 80px;
         margin-top: 10px;
-        background-image: url(../../assets/imgs/nav_logo.svg);
+        background-image: url(../imgs/nav_logo.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -56,16 +56,16 @@ footer {
                 background-position: center;
                 background-size: 20px;
                 &:first-child {
-                    background-image: url(../../assets/imgs/social-twitter.svg);
+                    background-image: url(../imgs/social-twitter.svg);
                 }
                 &:nth-child(2) {
-                    background-image: url(../../assets/imgs/social-facebook.svg);
+                    background-image: url(../imgs/social-facebook.svg);
                 }
                 &:nth-child(3) {
-                    background-image: url(../../assets/imgs/social-instagram.svg);
+                    background-image: url(../imgs/social-instagram.svg);
                 }
                 &:nth-child(4) {
-                    background-image: url(../../assets/imgs/social-google-plus.svg);
+                    background-image: url(../imgs/social-google-plus.svg);
                 }
                 &:hover {
                     border: 1px solid $yellow;

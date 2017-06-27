@@ -68,15 +68,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** FONTS **/
 @font-face {
   font-family: "Hand";
-  src: url("../fonts/Hand.eot?") format("eot"), url("../fonts/Hand.woff") format("woff"), url("../fonts/Hand.ttf") format("truetype"), url("../fonts/Hand.svg#Samplino") format("svg");
+  src: url("../fonts/Hand.eot") format("eot"), url("../fonts/Hand.woff") format("woff"), url("../fonts/Hand.ttf") format("truetype"), url("../fonts/Hand.svg#Samplino") format("svg");
 }
 @font-face {
   font-family: "Existence";
-  src: url("../fonts/Existence.eot?") format("eot"), url("../fonts/Existence.woff") format("woff"), url("../fonts/Existence.ttf") format("truetype"), url("../fonts/Existence.svg#Samplino") format("svg");
+  src: url("../fonts/Existence.eot") format("eot"), url("../fonts/Existence.woff") format("woff"), url("../fonts/Existence.ttf") format("truetype"), url("../fonts/Existence.svg#Samplino") format("svg");
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato.eot?") format("eot"), url("../fonts/Lato.woff") format("woff"), url("../fonts/Lato.ttf") format("truetype"), url("../fonts/Lato.svg#Samplino") format("svg");
+  src: url("../fonts/Lato.eot") format("eot"), url("../fonts/Lato.woff") format("woff"), url("../fonts/Lato.ttf") format("truetype"), url("../fonts/Lato.svg#Samplino") format("svg");
 }
 /* line 1, ../scss/components/_header_home.scss */
 header {
@@ -118,15 +118,15 @@ header .swiper-container .slideContent #rack03 {
 }
 /* line 30, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent #rack01 {
-  background-image: url(../../assets/imgs/Home_Slider/slide01.png);
+  background-image: url(../imgs/Home_Slider/slide01.png);
 }
 /* line 33, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent #rack02 {
-  background-image: url(../../assets/imgs/Home_Slider/slide02.png);
+  background-image: url(../imgs/Home_Slider/slide02.png);
 }
 /* line 36, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent #rack03 {
-  background-image: url(../../assets/imgs/Home_Slider/slide03.png);
+  background-image: url(../imgs/Home_Slider/slide03.png);
 }
 /* line 39, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent .slide-content {
@@ -161,16 +161,16 @@ header .swiper-container .slideContent .slide-content #boutiquelogo03 {
 }
 /* line 65, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent .slide-content #boutiquelogo01 {
-  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo01.png);
+  background-image: url(../imgs/Home_Slider/boutiquelogo01.png);
 }
 /* line 68, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent .slide-content #boutiquelogo02 {
-  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo03.png);
+  background-image: url(../imgs/Home_Slider/boutiquelogo03.png);
   background-size: contain;
 }
 /* line 72, ../scss/components/_header_home.scss */
 header .swiper-container .slideContent .slide-content #boutiquelogo03 {
-  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo02.png);
+  background-image: url(../imgs/Home_Slider/boutiquelogo02.png);
 }
 /* line 77, ../scss/components/_header_home.scss */
 header .swiper-container #slider-links {
@@ -189,7 +189,7 @@ header .swiper-container #slider-links #logoslider {
   height: 120px;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../../assets/imgs/Home_Slider/header_logo.svg);
+  background-image: url(../imgs/Home_Slider/header_logo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -197,7 +197,7 @@ header .swiper-container #slider-links #logoslider {
 /* line 96, ../scss/components/_header_home.scss */
 header .swiper-container #slider-links #applelink {
   height: 64px;
-  background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+  background-image: url(../imgs/Home_Slider/mfr-apple.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -315,7 +315,7 @@ footer #logo_footer {
   width: 30%;
   height: 80px;
   margin-top: 10px;
-  background-image: url(../../assets/imgs/nav_logo.svg);
+  background-image: url(../imgs/nav_logo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -353,19 +353,19 @@ footer #social ul li a {
 }
 /* line 58, ../scss/components/_footer.scss */
 footer #social ul li:first-child {
-  background-image: url(../../assets/imgs/social-twitter.svg);
+  background-image: url(../imgs/social-twitter.svg);
 }
 /* line 61, ../scss/components/_footer.scss */
 footer #social ul li:nth-child(2) {
-  background-image: url(../../assets/imgs/social-facebook.svg);
+  background-image: url(../imgs/social-facebook.svg);
 }
 /* line 64, ../scss/components/_footer.scss */
 footer #social ul li:nth-child(3) {
-  background-image: url(../../assets/imgs/social-instagram.svg);
+  background-image: url(../imgs/social-instagram.svg);
 }
 /* line 67, ../scss/components/_footer.scss */
 footer #social ul li:nth-child(4) {
-  background-image: url(../../assets/imgs/social-google-plus.svg);
+  background-image: url(../imgs/social-google-plus.svg);
 }
 /* line 70, ../scss/components/_footer.scss */
 footer #social ul li:hover {
@@ -442,7 +442,7 @@ body #conceptimg #phoneanim #phoneconcept {
   position: absolute;
   height: 650px;
   width: 300px;
-  background-image: url(../../assets/imgs/Concept-Phone.png);
+  background-image: url(../imgs/Concept-Phone.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: fixed;
@@ -464,7 +464,7 @@ body #conceptimg #phoneanim #phoneslides #phoneslide {
   width: 850px;
   height: 460px;
   position: absolute;
-  background-image: url(../../assets/imgs/phone-slide-01.jpg);
+  background-image: url(../imgs/phone-slide-01.jpg);
   animation-name: roundandround;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -506,7 +506,7 @@ body #app h2 {
 }
 /* line 107, ../scss/templates/_index.scss */
 body #app #appimg {
-  background-image: url(../../assets/imgs/app-dl.jpg);
+  background-image: url(../imgs/app-dl.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -533,7 +533,7 @@ body #app #apptext #apptextcontent {
 }
 /* line 129, ../scss/templates/_index.scss */
 body #app #apptext #apptextcontent #appstore {
-  background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+  background-image: url(../imgs/Home_Slider/mfr-apple.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 80px;
@@ -555,7 +555,7 @@ body p {
 /* line 150, ../scss/templates/_index.scss */
 body #pro {
   height: 700px;
-  background-image: url(../../assets/imgs/probg.jpg);
+  background-image: url(../imgs/probg.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -589,7 +589,7 @@ body #pro #procontent p {
 }
 /* line 179, ../scss/templates/_index.scss */
 body #pro #procontent #prolink #mfrpro {
-  background-image: url(../../assets/imgs/logo_pro.svg);
+  background-image: url(../imgs/logo_pro.svg);
   background-repeat: no-repeat;
   background-position: center;
   height: 120px;
@@ -684,7 +684,7 @@ body #pro #procontent #prolink a:hover {
   }
   /* line 263, ../scss/templates/_index.scss */
   body #concept #conceptimg #phoneconcept {
-    background-image: url(../../assets/imgs/Concept-Phone-filled.png);
+    background-image: url(../imgs/Concept-Phone-filled.png);
   }
   /* line 266, ../scss/templates/_index.scss */
   body #concept #conceptimg #phoneslide {

@@ -129,6 +129,7 @@ module.exports = function (app) {
     server.use('/js', express.static('views/assets/js'));
     server.use('/css', express.static('views/assets/css'));
     server.use('/imgs', express.static('views/assets/imgs'));
+    server.use('/fonts', express.static('views/assets/fonts'));
 
 
     /*** API ***/
