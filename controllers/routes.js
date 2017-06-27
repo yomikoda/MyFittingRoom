@@ -33,6 +33,7 @@ module.exports = function (app) {
         res.sendFile(path.resolve('views/index.html'))
 
     });
+    
      server.get('/pro', function (req, res) {
         console.log(req.session)
         res.sendFile(path.resolve('views/indexpro.html'))
