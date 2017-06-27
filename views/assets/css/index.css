@@ -67,32 +67,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** SIZE **/
 /** FONTS **/
 @font-face {
-  font-family: "OpenBold";
-  src: url('/fonts/../fonts/OpenSans-Bold.eot');
-  src: url('/fonts/../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Hand";
+  src: url("../fonts/Hand.eot?") format("eot"), url("../fonts/Hand.woff") format("woff"), url("../fonts/Hand.ttf") format("truetype"), url("../fonts/Hand.svg#Samplino") format("svg");
 }
 @font-face {
-  font-family: "Open-Regular";
-  src: url('/fonts/../fonts/OpenSans-Regular.eot');
-  src: url('/fonts/../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Existence";
+  src: url("../fonts/Existence.eot?") format("eot"), url("../fonts/Existence.woff") format("woff"), url("../fonts/Existence.ttf") format("truetype"), url("../fonts/Existence.svg#Samplino") format("svg");
 }
 @font-face {
-  font-family: "Open-Semibold";
-  src: url('/fonts/../fonts/OpenSans-Semibold.eot');
-  src: url('/fonts/../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Semibold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-light";
-  src: url('/fonts/../fonts/OpenSans-Light.eot');
-  src: url('/fonts/../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/../fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Lato";
+  src: url("../fonts/Lato.eot?") format("eot"), url("../fonts/Lato.woff") format("woff"), url("../fonts/Lato.ttf") format("truetype"), url("../fonts/Lato.svg#Samplino") format("svg");
 }
 /* line 1, ../scss/components/_header_home.scss */
 header {
@@ -100,15 +84,122 @@ header {
   width: 100%;
   background: url(../imgs/header_background.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
 }
-/* line 6, ../scss/components/_header_home.scss */
+/* line 7, ../scss/components/_header_home.scss */
 header .swiper-container {
   width: 100%;
-  height: 650px;
+  height: 710px;
+  position: relative;
 }
-/* line 9, ../scss/components/_header_home.scss */
+/* line 11, ../scss/components/_header_home.scss */
 header .swiper-container .swiper-pagination-bullet-active {
-  background-color: orange;
+  background-color: #ffcc00;
+}
+/* line 14, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+}
+/* line 19, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .rack {
+  height: 100%;
+  width: 60%;
+}
+/* line 23, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent #rack01,
+header .swiper-container .slideContent #rack02,
+header .swiper-container .slideContent #rack03 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/* line 30, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent #rack01 {
+  background-image: url(../../assets/imgs/Home_Slider/slide01.png);
+}
+/* line 33, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent #rack02 {
+  background-image: url(../../assets/imgs/Home_Slider/slide02.png);
+}
+/* line 36, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent #rack03 {
+  background-image: url(../../assets/imgs/Home_Slider/slide03.png);
+}
+/* line 39, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+/* line 46, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content p {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 60px;
+  font-family: Hand;
+}
+/* line 52, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content p:last-child {
+  margin-bottom: 130px;
+  margin-top: 10px;
+}
+/* line 57, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content #boutiquelogo01,
+header .swiper-container .slideContent .slide-content #boutiquelogo02,
+header .swiper-container .slideContent .slide-content #boutiquelogo03 {
+  height: 130px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 65, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content #boutiquelogo01 {
+  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo01.png);
+}
+/* line 68, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content #boutiquelogo02 {
+  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo03.png);
+  background-size: contain;
+}
+/* line 72, ../scss/components/_header_home.scss */
+header .swiper-container .slideContent .slide-content #boutiquelogo03 {
+  background-image: url(../../assets/imgs/Home_Slider/boutiquelogo02.png);
+}
+/* line 77, ../scss/components/_header_home.scss */
+header .swiper-container #slider-links {
+  height: 230px;
+  width: 30%;
+  position: absolute;
+  bottom: 40px;
+  right: 2.5%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* line 87, ../scss/components/_header_home.scss */
+header .swiper-container #slider-links #logoslider {
+  height: 120px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../../assets/imgs/Home_Slider/header_logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* line 96, ../scss/components/_header_home.scss */
+header .swiper-container #slider-links #applelink {
+  height: 64px;
+  background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* line 1, ../scss/components/_nav.scss */
@@ -117,26 +208,27 @@ nav:first-child {
   z-index: 300;
   top: 0;
   width: 90%;
-  height: 90px;
+  height: 75px;
   float: right;
   padding-left: 5%;
   padding-right: 5%;
   background-color: white;
   background-color: #2f2f39;
   transition: all ease 1s;
+  box-shadow: 0 0 5px 2px black;
 }
-/* line 13, ../scss/components/_nav.scss */
-nav:first-child > a:first-child {
+/* line 14, ../scss/components/_nav.scss */
+nav:first-child > h1 > a:first-child {
   display: block;
   float: left;
   height: 100%;
 }
-/* line 17, ../scss/components/_nav.scss */
-nav:first-child > a:first-child img {
-  height: 70px;
-  margin-top: 10px;
+/* line 18, ../scss/components/_nav.scss */
+nav:first-child > h1 > a:first-child img {
+  height: 65px;
+  margin-top: 5px;
 }
-/* line 22, ../scss/components/_nav.scss */
+/* line 23, ../scss/components/_nav.scss */
 nav:first-child ul {
   float: right;
   width: 50%;
@@ -144,12 +236,12 @@ nav:first-child ul {
   height: 100%;
   line-height: 120px;
 }
-/* line 28, ../scss/components/_nav.scss */
+/* line 29, ../scss/components/_nav.scss */
 nav:first-child ul li {
   width: 25%;
   text-align: center;
 }
-/* line 31, ../scss/components/_nav.scss */
+/* line 32, ../scss/components/_nav.scss */
 nav:first-child ul li a {
   text-decoration: none;
   position: relative;
@@ -158,18 +250,21 @@ nav:first-child ul li a {
   height: 100%;
   line-height: 90px;
   transition: all ease 1s;
+  font-family: Existence;
+  letter-spacing: 4px;
+  font-size: 11px;
 }
-/* line 39, ../scss/components/_nav.scss */
+/* line 43, ../scss/components/_nav.scss */
 nav:first-child ul li a:hover {
   color: #ffcc00;
   transition: all ease 1s;
 }
-/* line 42, ../scss/components/_nav.scss */
+/* line 46, ../scss/components/_nav.scss */
 nav:first-child ul li a:hover:after {
   background: #ffcc00;
   transition: all ease 1s;
 }
-/* line 47, ../scss/components/_nav.scss */
+/* line 51, ../scss/components/_nav.scss */
 nav:first-child ul li a:after {
   content: "";
   position: absolute;
@@ -177,56 +272,456 @@ nav:first-child ul li a:after {
   background: rgba(255, 204, 0, 0);
   height: 1px;
   width: 80%;
-  top: 70%;
+  top: 75%;
   left: 50%;
   margin-left: -40%;
   transition: all ease 1s;
 }
-
-/* line 1, ../scss/components/_footer.scss */
-footer {
-  width: 94%;
-  height: calc(325px-6%);
-  padding: 3%;
-  background-color: #003399;
-}
-/* line 6, ../scss/components/_footer.scss */
-footer #logo_footer {
-  height: 200px;
-  width: 300px;
-  background-color: red;
-}
-/* line 11, ../scss/components/_footer.scss */
-footer nav {
-  width: 75%;
+/* line 66, ../scss/components/_nav.scss */
+nav:first-child ul li:last-child a {
+  color: white;
+  margin: 0 auto;
+  background-color: rgba(255, 204, 0, 0);
   height: 30px;
+  display: block;
+  margin-top: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  width: 80px;
+  border: 1px solid #ffcc00;
+}
+/* line 78, ../scss/components/_nav.scss */
+nav:first-child ul li:last-child a:hover {
+  color: black;
+  background-color: #ffcc00;
+  background-color: none;
+}
+/* line 82, ../scss/components/_nav.scss */
+nav:first-child ul li:last-child a:hover:after {
+  display: none;
+}
+
+/* line 18, ../scss/components/_footer.scss */
+footer {
+  height: 100px;
+  background-color: #2f2f39;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+/* line 25, ../scss/components/_footer.scss */
+footer #logo_footer {
+  width: 30%;
+  height: 80px;
+  margin-top: 10px;
+  background-image: url(../../assets/imgs/nav_logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* line 34, ../scss/components/_footer.scss */
+footer #social {
+  width: 35%;
+  height: 100px;
+}
+/* line 37, ../scss/components/_footer.scss */
+footer #social ul {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 45, ../scss/components/_footer.scss */
+footer #social ul li {
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+/* line 50, ../scss/components/_footer.scss */
+footer #social ul li a {
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+/* line 58, ../scss/components/_footer.scss */
+footer #social ul li:first-child {
+  background-image: url(../../assets/imgs/social-twitter.svg);
+}
+/* line 61, ../scss/components/_footer.scss */
+footer #social ul li:nth-child(2) {
+  background-image: url(../../assets/imgs/social-facebook.svg);
+}
+/* line 64, ../scss/components/_footer.scss */
+footer #social ul li:nth-child(3) {
+  background-image: url(../../assets/imgs/social-instagram.svg);
+}
+/* line 67, ../scss/components/_footer.scss */
+footer #social ul li:nth-child(4) {
+  background-image: url(../../assets/imgs/social-google-plus.svg);
+}
+/* line 70, ../scss/components/_footer.scss */
+footer #social ul li:hover {
+  border: 1px solid #ffcc00;
+  background-color: #ffcc00;
+}
+/* line 76, ../scss/components/_footer.scss */
+footer #social #credits {
+  margin-top: 20px;
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 87, ../scss/components/_footer.scss */
+  footer ul li {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 92, ../scss/components/_footer.scss */
+  footer #credits {
+    font-size: 10px;
+    color: white;
+  }
+}
+/* line 5, ../scss/templates/_index.scss */
+body .sectioncontent {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+/* line 10, ../scss/templates/_index.scss */
+body #concept {
+  height: 770px;
+}
+/* line 13, ../scss/templates/_index.scss */
+body #conceptimg,
+body #concepttext {
+  height: 700px;
+  width: 50%;
+  background-color: #ffcc00;
+  float: left;
+  opacity: 1;
+}
+/* line 21, ../scss/templates/_index.scss */
+body #concepttext {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+/* line 28, ../scss/templates/_index.scss */
+body #concepttextwrapper {
+  height: 70%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  opacity: 0;
+}
+/* line 39, ../scss/templates/_index.scss */
+body #conceptimg #phoneanim {
+  height: 700px;
+  width: 300px;
+  margin: 0 auto;
+  opacity: 0;
+  position: relative;
+}
+/* line 45, ../scss/templates/_index.scss */
+body #conceptimg #phoneanim #phoneconcept {
+  position: absolute;
+  height: 650px;
+  width: 300px;
+  background-image: url(../../assets/imgs/Concept-Phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  z-index: 100;
+  top: 30px;
+}
+/* line 56, ../scss/templates/_index.scss */
+body #conceptimg #phoneanim #phoneslides {
+  position: absolute;
+  height: 460px;
+  width: 262px;
+  z-index: 80;
+  top: 110px;
+  left: 21px;
+  overflow: hidden;
+}
+/* line 64, ../scss/templates/_index.scss */
+body #conceptimg #phoneanim #phoneslides #phoneslide {
+  width: 850px;
+  height: 460px;
+  position: absolute;
+  background-image: url(../../assets/imgs/phone-slide-01.jpg);
+  animation-name: roundandround;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes roundandround {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -900px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+/* line 88, ../scss/templates/_index.scss */
+body h2 {
+  height: 70px;
+  width: 100%;
+  display: block;
+  font-family: Lato;
+  text-align: center;
+  font-size: 30px;
+  line-height: 70px;
+  background-color: white;
+  color: #363742;
+  clear: both;
+}
+/* line 100, ../scss/templates/_index.scss */
+body #app {
+  height: 700px;
   background-color: white;
 }
-
-/* line 7, ../scss/templates/_index.scss */
-body #concept {
-  height: 800px;
-  background-color: dodgerblue;
+/* line 103, ../scss/templates/_index.scss */
+body #app h2 {
+  background-color: #312b81;
+  color: white;
 }
-/* line 11, ../scss/templates/_index.scss */
-body #app {
-  height: 800px;
-  background-color: orange;
+/* line 107, ../scss/templates/_index.scss */
+body #app #appimg {
+  background-image: url(../../assets/imgs/app-dl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+  float: left;
+  height: 630px;
+}
+/* line 116, ../scss/templates/_index.scss */
+body #app #apptext {
+  width: 50%;
+  height: 630px;
+  float: left;
+}
+/* line 120, ../scss/templates/_index.scss */
+body #app #apptext #apptextcontent {
+  width: 80%;
+  opacity: 0;
+  height: 330px;
+  margin: 150px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+/* line 129, ../scss/templates/_index.scss */
+body #app #apptext #apptextcontent #appstore {
+  background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+}
+/* line 138, ../scss/templates/_index.scss */
+body h3 {
+  font-family: hand;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/* line 144, ../scss/templates/_index.scss */
+body p {
+  font-family: Existence;
+  font-size: 17px;
+  text-align: center;
+  line-height: 22px;
+}
+/* line 150, ../scss/templates/_index.scss */
+body #pro {
+  height: 700px;
+  background-image: url(../../assets/imgs/probg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 155, ../scss/templates/_index.scss */
+body #pro h2 {
+  background-color: #ffcc00;
+  color: black;
+}
+/* line 159, ../scss/templates/_index.scss */
+body #pro #procontent {
+  opacity: 0;
+  height: 500px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  background-color: #2f2f39;
+  margin-top: 100px;
+}
+/* line 170, ../scss/templates/_index.scss */
+body #pro #procontent h3,
+body #pro #procontent p {
+  color: white;
+}
+/* line 174, ../scss/templates/_index.scss */
+body #pro #procontent p {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 179, ../scss/templates/_index.scss */
+body #pro #procontent #prolink #mfrpro {
+  background-image: url(../../assets/imgs/logo_pro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  cursor: pointer;
+}
+/* line 186, ../scss/templates/_index.scss */
+body #pro #procontent #prolink a {
+  display: block;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: Lato;
+  width: 200px;
+  margin: 0 auto;
+  background: #ffcc00;
+  border-radius: 15px;
+  border: 1px solid #ffcc00;
+}
+/* line 199, ../scss/templates/_index.scss */
+body #pro #procontent #prolink a:hover {
+  background: rgba(255, 204, 0, 0);
+  transition: all ease 1s;
+  color: white;
 }
 
-/* line 17, ../scss/templates/_index.scss */
+/* line 210, ../scss/templates/_index.scss */
 * {
   transition: all ease 1s;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 23, ../scss/templates/_index.scss */
+  /* line 216, ../scss/templates/_index.scss */
+  body header {
+    height: 600px;
+  }
+  /* line 219, ../scss/templates/_index.scss */
+  body .swiper-container {
+    height: 524px;
+  }
+
+  /* line 223, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 30, ../scss/templates/_index.scss */
+  /* line 230, ../scss/templates/_index.scss */
+  body .swiper-container {
+    display: none;
+  }
+  /* line 233, ../scss/templates/_index.scss */
+  body header {
+    height: 60px;
+  }
+  /* line 236, ../scss/templates/_index.scss */
+  body h2 {
+    font-size: 25px;
+    height: 35px;
+    line-height: 35px;
+  }
+  /* line 241, ../scss/templates/_index.scss */
+  body #concept {
+    height: 900px;
+    margin: 0;
+  }
+  /* line 244, ../scss/templates/_index.scss */
+  body #concept #conceptimg,
+  body #concept #concepttext {
+    float: none;
+    width: 100%;
+  }
+  /* line 249, ../scss/templates/_index.scss */
+  body #concept #concepttext {
+    height: 500px;
+  }
+  /* line 252, ../scss/templates/_index.scss */
+  body #concept #concepttextwrapper {
+    height: 450px;
+  }
+  /* line 255, ../scss/templates/_index.scss */
+  body #concept #conceptimg {
+    height: 350px;
+  }
+  /* line 257, ../scss/templates/_index.scss */
+  body #concept #conceptimg #phoneanim,
+  body #concept #conceptimg #phoneconcept {
+    height: 280px;
+    width: 100%;
+    background-position: center;
+  }
+  /* line 263, ../scss/templates/_index.scss */
+  body #concept #conceptimg #phoneconcept {
+    background-image: url(../../assets/imgs/Concept-Phone-filled.png);
+  }
+  /* line 266, ../scss/templates/_index.scss */
+  body #concept #conceptimg #phoneslide {
+    display: none;
+  }
+  /* line 271, ../scss/templates/_index.scss */
+  body #app {
+    height: 700px;
+  }
+  /* line 273, ../scss/templates/_index.scss */
+  body #app #apptext,
+  body #app #appimg {
+    float: none;
+  }
+  /* line 277, ../scss/templates/_index.scss */
+  body #app #appimg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  /* line 282, ../scss/templates/_index.scss */
+  body #app #apptext {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+  }
+  /* line 286, ../scss/templates/_index.scss */
+  body #app #apptext #apptextcontent {
+    margin: 10px auto 0;
+  }
+  /* line 292, ../scss/templates/_index.scss */
+  body #pro #procontent {
+    width: 90%;
+    height: 540px;
+  }
+
+  /* line 298, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }

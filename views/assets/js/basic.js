@@ -5,42 +5,17 @@ $(window).resize(function () {
     console.log("height :" + height);
 });
 
+var width = window.innerWidth;
 
-//$('#burger').click(function () {
-//    $('#burger').toggleClass('clickedburger');
-//    $('header').toggleClass('responsivetab');
-//    //ERASE CONSOLE LOGS   
-//    if ($('#burger').hasClass('clickedburger')) {
-//        $('header>h1>img').attr("src", '/assets/img/logo-silver-act-white.svg');
-//        $('header').css({
-//            'height': height,
-//            'transition': 'all ease 1s'
-//        });
-//        $('body').css({
-//            'overflow': 'hidden',
-//            'transition': 'all ease 1s'
-//        });
-//    } else {
-//        $('header>h1>img').attr("src", '/assets/img/logo-silver-act.svg');
-//        $('header').css({
-//            'height': '100px',
-//            'transition': 'all ease 1s'
-//        });
-//        $('body').css({
-//            'overflow': 'scroll',
-//            'transition': 'all ease 1s'
-//        });
-//
-//    }
-//
-//});
+if (width>650){
+
 
 $(window).scroll(function () {
     scrollvalue = $(window).scrollTop();
 
     console.log(scrollvalue);
 
-    if (scrollvalue > 720) {
+    if (scrollvalue > 700) {
         var lastScrollTop = 0;
         $(window).scroll(function (event) {
             var st = $(this).scrollTop();
@@ -50,10 +25,10 @@ $(window).scroll(function () {
                     'right': '0',
                     'top:': '-90px'
                 });
-                $('nav:first-child').addClass('peekaboo');
+                
 
             } else {
-                $('nav:first-child').addClass('peekabooRev');
+                
                 $('nav:first-child').css({
                     'position': 'relative',
                     'right': '0',
@@ -72,3 +47,17 @@ $(window).scroll(function () {
     }
 
 });
+    
+    }
+
+else{
+    
+    
+  $('nav:first-child').css({
+                    'position': 'relative',
+                    'top': '0'
+                });  
+
+    
+    
+}

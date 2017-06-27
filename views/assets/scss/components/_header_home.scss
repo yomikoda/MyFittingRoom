@@ -3,11 +3,102 @@ header {
     width: 100%;
     background: url(../imgs/header_background.jpg) center no-repeat;
     background-size: cover;
+    position: relative;
     .swiper-container {
         width: 100%;
-        height: 650px;
-        .swiper-pagination-bullet-active{
-           background-color:orange; 
+        height: 710px;
+        position: relative;
+        .swiper-pagination-bullet-active {
+            background-color: $yellow;
+        }
+        .slideContent {
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+            justify-content: space-around;
+            .rack {
+                height: 100%;
+                width: 60%;
+            }
+            #rack01,
+            #rack02,
+            #rack03 {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: bottom;
+            }
+            #rack01 {
+                background-image: url(../../assets/imgs/Home_Slider/slide01.png);
+            }
+            #rack02 {
+                background-image: url(../../assets/imgs/Home_Slider/slide02.png);
+            }
+            #rack03 {
+                background-image: url(../../assets/imgs/Home_Slider/slide03.png);
+            }
+            .slide-content {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                p {
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    font-size: 60px;
+                    font-family: Hand;
+                    &:last-child {
+                        margin-bottom: 130px;
+                        margin-top: 10px;
+                    }
+                }
+                #boutiquelogo01,
+                #boutiquelogo02,
+                #boutiquelogo03 {
+                    height: 130px;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                #boutiquelogo01 {
+                    background-image: url(../../assets/imgs/Home_Slider/boutiquelogo01.png);
+                }
+                #boutiquelogo02 {
+                    background-image: url(../../assets/imgs/Home_Slider/boutiquelogo03.png);
+                    background-size: contain;
+                }
+                #boutiquelogo03 {
+                    background-image: url(../../assets/imgs/Home_Slider/boutiquelogo02.png);
+                }
+            }
+        }
+        #slider-links {
+            height: 230px;
+            width: 30%;
+            position: absolute;
+            bottom: 40px;
+            right: 2.5%;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            #logoslider {
+                height: 120px;
+                width: 100%;
+                margin: 0 auto;
+                background-image: url(../../assets/imgs/Home_Slider/header_logo.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            #applelink {
+                height: 64px;
+                background-image: url(../../assets/imgs/Home_Slider/mfr-apple.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
     }
 }

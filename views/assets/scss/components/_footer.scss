@@ -1,17 +1,97 @@
-footer{
-    width:94%;
-    height:calc(325px-6%);
-    padding:3%;
-    background-color:#003399;
-    #logo_footer{
-        height:200px;
-        width:300px;
-        background-color:red;
+//footer{
+//    width:94%;
+//    height:calc(325px-6%);
+//    padding:3%;
+//    background-color:$Bgrey;
+//    #logo_footer{
+//        height:200px;
+//        width:300px;
+//        background-color:red;
+//    }
+//    nav{
+//        width:75%;
+//        height:30px;
+//        background-color:white;
+//    }
+//    
+//}
+footer {
+    height: 100px;
+    background-color: $Bgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    #logo_footer {
+        width: 30%;
+        height: 80px;
+        margin-top: 10px;
+        background-image: url(../../assets/imgs/nav_logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
-    nav{
-        width:75%;
-        height:30px;
-        background-color:white;
+    #social {
+        width: 35%;
+        height: 100px;
+        ul {
+            width: 100%;
+            height: 35px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: space-between;
+            li {
+                height: 35px;
+                width: 35px;
+                border: 1px solid white;
+                border-radius: 25px;
+                a {
+                    display: block;
+                    height: 35px;
+                    width: 35px;
+                }
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                &:first-child {
+                    background-image: url(../../assets/imgs/social-twitter.svg);
+                }
+                &:nth-child(2) {
+                    background-image: url(../../assets/imgs/social-facebook.svg);
+                }
+                &:nth-child(3) {
+                    background-image: url(../../assets/imgs/social-instagram.svg);
+                }
+                &:nth-child(4) {
+                    background-image: url(../../assets/imgs/social-google-plus.svg);
+                }
+                &:hover {
+                    border: 1px solid $yellow;
+                    background-color: $yellow;
+                }
+            }
+        }
+        #credits {
+            margin-top: 20px;
+            color: white;
+            width:100%;
+        }
     }
-    
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        ul {
+            li {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        #credits {
+            font-size: 10px;
+            color:white;
+        }
+    }
 }

@@ -3,20 +3,21 @@ nav:first-child {
     z-index: 300;
     top: 0;
     width: 90%;
-    height: 90px;
+    height: 75px;
     float: right;
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgba(255, 255, 255, 1);
     background-color: $Bgrey;
-    transition: all ease 1s;
-    &>a:first-child {
+     @include _transition();
+    box-shadow: 0 0 5px 2px black;
+    &>h1>a:first-child {
         display: block;
         float: left;
         height: 100%;
         img {
-            height: 70px;
-            margin-top: 10px;
+            height: 65px;
+            margin-top: 5px;
         }
     }
     ul {
@@ -35,13 +36,16 @@ nav:first-child {
                 display: block;
                 height: 100%;
                 line-height: 90px;
-                transition: all ease 1s;
+                 @include _transition();
+                font-family: Existence;
+                letter-spacing: 4px;
+                font-size: 11px;
                 &:hover {
                     color: $yellow;
-                    transition: all ease 1s;
+                     @include _transition();
                     &:after {
                         background: rgba(255, 204, 0, 1);
-                        transition: all ease 1s;
+                         @include _transition();
                     }
                 }
                 &:after {
@@ -51,10 +55,34 @@ nav:first-child {
                     background: rgba(255, 204, 0, 0);
                     height: 1px;
                     width: 80%;
-                    top: 70%;
+                    top: 75%;
                     left: 50%;
                     margin-left: -40%;
-                    transition: all ease 1s;
+                     @include _transition();
+                }
+                
+            }
+            &:last-child {
+                a {
+                    color: white;
+                    margin:0 auto;
+                    background-color: rgba(255,204,0,0);
+                    height:30px;
+                    display: block;
+                    margin-top:30px;
+                    line-height: 30px;
+                    border-radius: 20px;
+                    width:80px;
+                    border:1px solid $yellow;
+                }
+                a:hover {
+                    color: black;
+                    background-color: rgba(255,204,0,1);
+                    background-color:none;
+                    &:after{
+                        display: none;
+                    }
+                    
                 }
             }
         }
